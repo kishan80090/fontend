@@ -42,7 +42,7 @@ const CartItems = () => {
           <div>
             <div className="cartitems-total-item">
               <p>Subtotal</p>
-              <p>₹{getTotalCartAmount()}</p>  {/* ✅ function call */}
+              <p>₹{getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="cartitems-total-item">
@@ -51,7 +51,7 @@ const CartItems = () => {
             </div>
             <hr />
             <div className="cartitems-total-item">
-              <h3>Grand Total: ₹{getTotalCartAmount()}</h3> {/* ✅ function call */}
+              <h3>Grand Total: ₹{getTotalCartAmount()}</h3>
             </div>
           </div>
           <button>PROCEED TO CHECKOUT</button>
