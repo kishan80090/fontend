@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  background: rgb(29, 28, 28);
-  color: #fff;
+  background: white;
+  color: black;
   padding: 40px 80px;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 .footer-logo p {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: black;
 }
 
 .footer-links {
@@ -45,7 +45,7 @@
 }
 
 .footer-links li:hover {
-  color: #f8b500;
+  color: rgb(50, 50, 240);
 }
 
 .footer-social-icon {
@@ -74,7 +74,7 @@
 
 .footer-icons-container:hover {
   /* background: green; */
-  background: linear-gradient(to right, blue,white,blue);
+  background: linear-gradient(to right, rgb(92, 92, 238));
   transform: scale(1.1);
 }
 
@@ -87,7 +87,7 @@
 .footer p {
   font-size: 14px;
   text-align: center;
-  color: #ccc;
+  color: black;
 }
 
 /* ✅ Responsive */
