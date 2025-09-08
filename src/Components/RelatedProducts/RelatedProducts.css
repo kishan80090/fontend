@@ -1,0 +1,32 @@
+.relatedproducts {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.relatedproducts h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.relatedproducts hr {
+  width: 120px;
+  height: 3px;
+  border: none;
+  background: #ff6a00;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.relatedproducts-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* responsive grid */
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+}

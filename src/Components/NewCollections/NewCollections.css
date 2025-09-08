@@ -1,0 +1,49 @@
+.new-Collections {
+  width: 100%;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.new-Collections h1 {
+  color: #171717;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.new-Collections hr {
+  width: 120px;
+  height: 3px;
+  border: none;
+  border-radius: 10px;
+  background: #252525;
+  margin-bottom: 30px;
+}
+
+/* ✅ Grid for New Collections */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center; 
+  box-sizing: border-box;
+}
+
+/* ✅ Responsive for smaller screens */
+@media (max-width: 768px) {
+  .new-Collections {
+    padding: 30px 20px;
+  }
+
+  .new-Collections h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,49 @@
+/* Breadcrum.css */
+
+.breadcrum {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.breadcrum img {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+/* Highlight current product */
+.breadcrum span {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .breadcrum {
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .breadcrum img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrum {
+    font-size: 12px;
+    gap: 3px;
+  }
+
+  .breadcrum img {
+    width: 8px;
+    height: 8px;
+  }
+}

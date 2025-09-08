@@ -1,0 +1,152 @@
+.cartitems {
+  width: 80%;
+  margin: 50px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Header row */
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 80px 2fr 100px 80px 100px 50px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Each product row */
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 80px 2fr 100px 80px 100px 50px;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.carticon-product-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Quantity box */
+.cartitems-quantity {
+  width: 48px;
+  height: 34px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #f9f9f9;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+/* Remove icon */
+.cartitems-format img:last-child {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cartitems-format img:last-child:hover {
+  transform: scale(1.1);
+}
+
+/* Bottom section */
+.cartitems-down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Cart totals */
+.cartitems-total {
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.cartitems-total h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.cartitems-total button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #ff4141;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cartitems-total button:hover {
+  background: #e03a3a;
+}
+
+/* Promo code section */
+.cartitems-promocode {
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.cartitems-promocode p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.cartitems-promobox {
+  display: flex;
+  gap: 10px;
+}
+
+.cartitems-promobox input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.cartitems-promobox button {
+  padding: 10px 16px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cartitems-promobox button:hover {
+  background: #111;
+}
