@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import './CSS/LoginSignup.css'
-
 const LoginSignup = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: ""
   });
-
   const handleSubmit = async () => {
     const res = await fetch("http://localhost:5000/signup", {
       method: "POST",
@@ -17,7 +15,6 @@ const LoginSignup = () => {
     const data = await res.json();
     alert(data.message);
   };
-
   return (
     <div className='loginsignup'>
       <div className="loginsignup-container">

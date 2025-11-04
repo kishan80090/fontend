@@ -1,5 +1,7 @@
 /* ShopCategory.css */
-
+body{
+  background-color: lightgoldenrodyellow;
+}
 .shop-category {
   width: 100%;
   padding: 20px;
@@ -117,3 +119,5 @@
     padding: 10px 25px;
   }
 }
+
+
