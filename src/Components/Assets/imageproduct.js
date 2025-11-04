@@ -1,5 +1,5 @@
 const imageProducts = [
-  // 👩 WOMEN PRODUCTS (101–110)
+  // WOMEN PRODUCTS (101–110)
   {
     id: 101,
     name: "Floral Summer Dress Women Regular Fit Solid",
@@ -9,21 +9,21 @@ const imageProducts = [
   },
   {
     id: 102,
-    name: "Trendy Handbag Floral Summer Dress Women Regular Fit Solid",
+    name: "Trendy Handbag Floral Summer Dress Women Solid",
     image: "https://kishan80090.github.io/jsondata/pictures/girl2.jpg",
     new_price: 1199,
     old_price: 1499,
   },
   {
     id: 103,
-    name: "High Heel Sandals Floral Summer Dress Women Regular Fit Solid",
+    name: "High Heel Sandals Floral Summer Dress Women solid",
     image: "https://kishan80090.github.io/jsondata/pictures/girl3.jpg",
     new_price: 899,
     old_price: 1199,
   },
   {
     id: 104,
-    name: "Designer Floral Summer Dress Women Regular Fit Solid (Pink)",
+    name: "Designer Floral Summer Dress Women Regular Fit",
     image: "https://kishan80090.github.io/jsondata/pictures/girl4.jpg",
     new_price: 799,
     old_price: 1099,
@@ -37,21 +37,21 @@ const imageProducts = [
   },
   {
     id: 106,
-    name: "Ladies Floral Summer Dress Women Regular Fit Solid",
+    name: "Ladies Floral Summer Dress Women Regular Fit Solid (Blue)",
     image: "https://kishan80090.github.io/jsondata/pictures/girl6.jpg",
     new_price: 1299,
     old_price: 1699,
   },
   {
     id: 107,
-    name: "Floral Summer Dress Styles Women Regular Fit Solid",
+    name: "Floral Summer Dress Styles Women Regular Fit Solid (Blue)",
     image: "https://kishan80090.github.io/jsondata/pictures/girl7.jpg",
     new_price: 599,
     old_price: 899,
   },
   {
     id: 108,
-    name: "Ladies Floral Summer Dress Women Regular Fit Solid",
+    name: "Ladies Floral Summer Dress Women Regular Fit Solid (Black)",
     image: "https://kishan80090.github.io/jsondata/pictures/girl8.jpg",
     new_price: 499,
     old_price: 699,
@@ -71,7 +71,7 @@ const imageProducts = [
     old_price: 1399,
   },
 
-  // 👨 MEN PRODUCTS (111–120)
+  // MEN PRODUCTS (111–120)
   {
     id: 111,
     name: "Stylish men’s full shirts for every occasion (Sky)",
@@ -95,7 +95,7 @@ const imageProducts = [
   },
   {
     id: 114,
-    name: "Stylish men’s full shirts for every occasion (Dark_B)",
+    name: "Stylish men’s full shirts for every occasion (Dark_Black)",
     image: "https://kishan80090.github.io/jsondata/pictures/man4.jpg",
     new_price: 899,
     old_price: 1199,
@@ -123,14 +123,14 @@ const imageProducts = [
   },
   {
     id: 118,
-    name: "Office Stylish men’s full shirts for every occasion (Blue)",
+    name: "Office Stylish men’s full shirts for every occasion",
     image: "https://kishan80090.github.io/jsondata/pictures/man8.jpg",
     new_price: 999,
     old_price: 1299,
   },
   {
     id: 119,
-    name: "Men’s Stylish men’s full shirts for every occasion (Red)",
+    name: "Men’s Stylish men’s full shirts for every occasion",
     image: "https://kishan80090.github.io/jsondata/pictures/man9.jpg",
     new_price: 699,
     old_price: 999,
@@ -143,7 +143,7 @@ const imageProducts = [
     old_price: 1299,
   },
 
-  // 🧒 KIDS PRODUCTS (121–130)
+  // KIDS PRODUCTS (121–130)
   {
     id: 121,
     name: "Stylish kids full shirts for every occasion (Gray)",
@@ -160,7 +160,7 @@ const imageProducts = [
   },
   {
     id: 123,
-    name: "Stylish kids full shirts for every occasion (Black_white)",
+    name: "Stylish kids full shirts for every occasion",
     image: "https://kishan80090.github.io/jsondata/pictures/kid3.jpg",
     new_price: 799,
     old_price: 999,
@@ -181,7 +181,7 @@ const imageProducts = [
   },
   {
     id: 126,
-    name: "Stylish kids full shirts for every occasion Styles (White)",
+    name: "Stylish kids full shirts for every occasion Styles",
     image: "https://kishan80090.github.io/jsondata/pictures/kid6.jpg",
     new_price: 799,
     old_price: 1099,

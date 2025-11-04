@@ -52,7 +52,7 @@ const ShopContextProvider = (props) => {
   };
 
   const contextValue = {
-    all_product: combinedProducts, // merged product list
+    all_product: combinedProducts,
     cartItems,
     addToCart,
     removeFromCart,

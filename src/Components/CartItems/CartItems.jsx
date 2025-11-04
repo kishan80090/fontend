@@ -2,9 +2,23 @@ import React, { useContext } from 'react'
 import './CartItems.css'
 import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/remove_icon.png'
+import { useNavigate } from 'react-router-dom'
 
 const CartItems = () => {
   const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
+  const navigate = useNavigate();
+
+  
+  const isCartEmpty = getTotalCartAmount() === 0;
+
+  
+  const handleCheckout = () => {
+    if (isCartEmpty) {
+      alert("Please add some products to your cart before checkout!");
+    } else {
+      navigate("/checkout");
+    }
+  };
 
   return (
     <div className='cartitems'>
@@ -60,7 +74,18 @@ const CartItems = () => {
               <h3>Grand Total: ₹{getTotalCartAmount()}</h3>
             </div>
           </div>
-          <button>PROCEED TO CHECKOUT</button>
+
+          
+          <button 
+            onClick={handleCheckout} 
+            disabled={isCartEmpty}
+            style={{
+              backgroundColor: isCartEmpty ? "#ccc" : "#ff4141",
+              cursor: isCartEmpty ? "not-allowed" : "pointer"
+            }}
+          >
+            PROCEED TO CHECKOUT
+          </button>
         </div>
 
         <div className="cartitems-promocode">

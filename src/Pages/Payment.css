@@ -1,0 +1,103 @@
+.payment-page {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.payment-page h1 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.payment-page p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Payment options */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.payment-options label {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.payment-options input[type="radio"] {
+  transform: scale(1.2);
+}
+
+/* Card details section */
+.card-details {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.card-details input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card-details input:focus {
+  border-color: #ff4c3b;
+}
+
+/* ✅ Fixed bottom two inputs layout */
+.card-extra {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-extra input {
+  flex: 1;
+  min-width: 0; /* prevents overflow */
+}
+
+/* Pay button */
+.pay-btn {
+  width: 100%;
+  margin-top: 25px;
+  background-color: #ff4c3b;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pay-btn:hover {
+  background-color: #e04336;
+}

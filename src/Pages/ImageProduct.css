@@ -1,3 +1,4 @@
+/* 🌟 Main Container */
 .image-products {
   padding: 50px 5%;
   text-align: center;
@@ -17,14 +18,14 @@
   font-size: 1.1rem;
 }
 
-/* Grid */
+/* 🛍️ Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-/* Product Card */
+/* 🧩 Product Card */
 .product-card {
   background: #fff;
   border-radius: 16px;
@@ -40,22 +41,29 @@
   transform: translateY(-5px);
 }
 
-/* Product Image */
-.product-card img {
+/* 🖼️ Product Image */
+.clickable-image {
   width: 100%;
   height: 280px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Product Title */
+.clickable-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏷️ Product Title */
 .product-card h3 {
   margin: 15px 0 10px;
   font-size: 1.2rem;
   color: #333;
 }
 
-/* Prices */
+/* 💰 Prices */
 .prices {
   margin-bottom: 15px;
 }
@@ -73,7 +81,7 @@
   color: #888;
 }
 
-/* Size Options */
+/* 📏 Size Options (used in modal) */
 .size-options p {
   font-size: 0.95rem;
   color: #444;
@@ -93,31 +101,11 @@
   background: #fff;
   color: #666;
   font-size: 0.9rem;
+  
 }
-
-/* Product Buttons */
-.product-buttons {
-  margin: 15px 0 20px;
-  display: flex;
-  gap: 12px;
+.size-btn:hover{
+  border-color: #222;
 }
-
-.product-buttons button {
-  background: #ff4141;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  transition: 0.3s;
-}
-
-.product-buttons button:hover {
-  background: #e63939;
-}
-
-/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -128,9 +116,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
+  overflow-y: auto;
+  backdrop-filter: blur(3px); /* ✨ smooth blur background */
 }
 
+/* 📦 Modal Content */
 .modal-content {
   background: white;
   border-radius: 16px;
@@ -140,6 +131,10 @@
   position: relative;
   text-align: center;
   animation: popIn 0.3s ease;
+  z-index: 10000;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes popIn {
@@ -153,7 +148,7 @@
   }
 }
 
-/* Modal Image */
+/* 🖼️ Modal Image */
 .modal-image {
   width: 100%;
   height: auto;
@@ -163,7 +158,7 @@
   margin-bottom: 15px;
 }
 
-/* Modal Buttons */
+/* 🔘 Modal Buttons */
 .modal-buttons {
   display: flex;
   justify-content: center;
@@ -194,6 +189,7 @@
   background: #555;
 }
 
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
   .product-card img {
     height: 230px;

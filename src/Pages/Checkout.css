@@ -1,0 +1,90 @@
+.checkout-page {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #ff4141;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.checkout-page p {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.checkout-form h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-left: 4px solid #ff4141;
+  padding-left: 8px;
+}
+
+.checkout-form input {
+  padding: 14px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.checkout-form input:focus {
+  border-color: #ff4141;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 65, 65, 0.2);
+}
+
+.place-order-btn {
+  background-color: #ff4141;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.place-order-btn:hover {
+  background-color: #ff2626;
+  transform: scale(1.03);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .checkout-page {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .checkout-page h1 {
+    font-size: 26px;
+  }
+
+  .checkout-form input {
+    font-size: 15px;
+  }
+
+  .place-order-btn {
+    font-size: 16px;
+  }
+}
