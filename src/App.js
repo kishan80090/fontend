@@ -9,11 +9,11 @@ import Footer from "./Components/Footer/Footer";
 import men_banner from './Components/Assets/men_banner.png';
 import women_banner from './Components/Assets/women_banner.png';
 import kid_banner from './Components/Assets/kid_banner.png';
-import ImageProduct from "./Pages/ImageProduct"; // ✅ added
-import AllProducts from "./Pages/AllProducts"; // ✅ new import added
-import Checkout from "./Pages/Checkout"; //
+import ImageProduct from "./Pages/ImageProduct"; 
+import AllProducts from "./Pages/AllProducts"; 
+import Checkout from "./Pages/Checkout"; 
 import Payment from "./Pages/Payment";
-
+import LatestCollection from './Pages/LatestCollection';
 function App() {
   return (
     <div>
@@ -30,9 +30,10 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<LoginSignup />} />
           <Route path='/imageproducts' element={<ImageProduct />} />
-          <Route path='/all-products' element={<AllProducts />} /> {/* ✅ added route */}
+          <Route path='/all-products' element={<AllProducts />} />
          <Route path="/checkout" element={<Checkout />} />
          <Route path="/payment" element={<Payment />} />
+         <Route path="/latestcollection" element={<LatestCollection />} />
         </Routes>
         <Footer />
       </BrowserRouter>

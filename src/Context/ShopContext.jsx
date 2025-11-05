@@ -1,11 +1,16 @@
 import React, { createContext, useState } from "react";
 import all_product from "../Components/Assets/all_product";
 import imageProducts from "../Components/Assets/imageproduct";
+import latestcollection from "../Components/Assets/latestcollection";
 
 export const ShopContext = createContext(null);
 
-// 👇 Dono ko ek saath merge kar do (unique IDs ke saath)
-const combinedProducts = [...all_product, ...imageProducts];
+
+const combinedProducts = [
+  ...all_product,
+  ...imageProducts,
+  ...latestcollection, 
+];
 
 const getDefaultCart = () => {
   let cart = {};
@@ -50,7 +55,7 @@ const ShopContextProvider = (props) => {
     }
     return total;
   };
-
+  
   const contextValue = {
     all_product: combinedProducts,
     cartItems,

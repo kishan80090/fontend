@@ -5,8 +5,10 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
+/* Heading style */
 .new-Collections h1 {
   color: #171717;
   font-size: 32px;
@@ -26,24 +28,223 @@
   margin-bottom: 30px;
 }
 
-/* ✅ Grid for New Collections */
+/* ✅ Grid layout for products */
 .collections {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* each card min 250px */
+  gap: 35px; /* proper space between cards */
   width: 100%;
   max-width: 1200px;
-  justify-items: center; 
+  justify-items: center;
+  padding: 20px;
   box-sizing: border-box;
 }
 
-/* ✅ Responsive for smaller screens */
+/* ✅ Product item box */
+.item {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 15px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Product image */
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Product name */
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 10px 0 6px;
+}
+
+/* ✅ Price section */
+.item-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-price-new {
+  color: #ff4c3b;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-price-old {
+  color: #888;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+/* ✅ Responsive */
 @media (max-width: 768px) {
   .new-Collections {
     padding: 30px 20px;
   }
 
   .new-Collections h1 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .collections {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+  }
+
+  .item img {
+    height: 200px;
+  }
+}
+/* ✅ Remove any global overflow issue */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* ✅ Container styling */
+.new-Collections {
+  width: 100%;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow-x: hidden; /* prevent side scroll */
+}
+
+/* Heading */
+.new-Collections h1 {
+  color: #171717;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.new-Collections hr {
+  width: 120px;
+  height: 3px;
+  border: none;
+  border-radius: 10px;
+  background: #252525;
+  margin-bottom: 30px;
+}
+
+/* ✅ Grid layout */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow-x: hidden; /* extra protection */
+}
+
+/* ✅ Product item */
+.item {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 15px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Product image */
+.item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Product name */
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 10px 0 6px;
+}
+
+/* ✅ Price */
+.item-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-price-new {
+  color: #ff4c3b;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-price-old {
+  color: #888;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .new-Collections {
+    padding: 20px;
+  }
+
+  .collections {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+  }
+
+  .item img {
+    height: 200px;
+  }
+
+  .new-Collections h1 {
+    font-size: 26px;
   }
 }

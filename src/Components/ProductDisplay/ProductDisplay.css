@@ -160,7 +160,7 @@
 
   /* Flipkart style: images on top */
   .productdisplay-left {
-    order: 1; /* images first */
+    order: 1; 
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;

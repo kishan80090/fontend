@@ -6,9 +6,7 @@ import { ShopContext } from "../Context/ShopContext";
 const ImageProduct = () => {
   const { addToCart } = useContext(ShopContext);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [selectedSize, setSelectedSize] = useState(null); // ✅ size state
-
-  // ✅ Add to cart (size optional)
+  const [selectedSize, setSelectedSize] = useState(null); 
   const handleAddToCart = (product) => {
     addToCart(product.id);
 
@@ -21,10 +19,8 @@ const ImageProduct = () => {
 
   return (
     <div className="image-products">
-      <h1>Explore Our Exclusive Collection</h1>
+      <h1>🎉 Explore Our Exclusive Collection 🎉</h1>
       <p>Discover the latest trends across Men, Women, and Kids categories</p>
-
-      {/* ✅ Product Grid */}
       <div className="product-grid">
         {imageProducts.map((product) => (
           <div key={product.id} className="product-card">
@@ -45,8 +41,6 @@ const ImageProduct = () => {
           </div>
         ))}
       </div>
-
-      {/* ✅ Quick View Modal */}
       {selectedProduct && (
         <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -65,8 +59,6 @@ const ImageProduct = () => {
               <span className="new-price">₹{selectedProduct.new_price}</span>
               <span className="old-price">₹{selectedProduct.old_price}</span>
             </div>
-
-            {/* ✅ Size Selection */}
             <div className="size-options">
               <p>Available Sizes:</p>
               <div className="size-buttons">
@@ -83,7 +75,6 @@ const ImageProduct = () => {
                 ))}
               </div>
             </div>
-
             <div className="modal-buttons">
               <button onClick={() => handleAddToCart(selectedProduct)}>
                 Add to Cart
@@ -104,5 +95,4 @@ const ImageProduct = () => {
     </div>
   );
 };
-
 export default ImageProduct;

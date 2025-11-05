@@ -11,7 +11,7 @@
 }
 
 .loginsignup-container {
-  background: linear-gradient(35deg,rgb(104, 104, 185));
+  background-color: rgb(187, 186, 186);
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);

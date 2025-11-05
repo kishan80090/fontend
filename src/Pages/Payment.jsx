@@ -4,25 +4,30 @@ import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
   const [method, setMethod] = useState("");
+  const [showFlower, setShowFlower] = useState(false);
   const navigate = useNavigate();
 
   const handlePayment = (e) => {
-    e.preventDefault(); // form reload hone se roke
+    e.preventDefault();
 
     if (!method) {
       alert("Please select a payment method!");
       return;
     }
 
-    if (method === "card") {
-      alert("Payment Successful by Card! 🎉");
-    } else if (method === "upi") {
-      alert("UPI Payment Successful! 🎉");
-    } else {
-      alert("Cash on Delivery Selected! 🎉");
-    }
+    // ✅ Show flower animation on success
+    setShowFlower(true);
 
-    navigate("/"); // redirect home
+    setTimeout(() => {
+      alert(
+        method === "card"
+          ? "Payment Successful by Card! 🎉"
+          : method === "upi"
+          ? "UPI Payment Successful! 🎉"
+          : "Cash on Delivery Selected! 🎉"
+      );
+      navigate("/"); // redirect home after few seconds
+    }, 2500);
   };
 
   return (
@@ -30,7 +35,6 @@ const Payment = () => {
       <h1>Payment</h1>
       <p>Select your payment method:</p>
 
-      {/* ✅ Form added for required validation */}
       <form className="payment-options" onSubmit={handlePayment}>
         <label>
           <input
@@ -45,20 +49,10 @@ const Payment = () => {
         {method === "card" && (
           <div className="card-details">
             <input type="text" placeholder="Cardholder Name" required />
-            <input
-              type="text"
-              placeholder="Card Number"
-              maxLength="16"
-              required
-            />
+            <input type="text" placeholder="Card Number" maxLength="16" required />
             <div className="card-extra">
               <input type="text" placeholder="MM/YY" maxLength="5" required />
-              <input
-                type="password"
-                placeholder="CVV"
-                maxLength="3"
-                required
-              />
+              <input type="password" placeholder="CVV" maxLength="3" required />
             </div>
           </div>
         )}
@@ -83,11 +77,22 @@ const Payment = () => {
           💵 Cash on Delivery
         </label>
 
-        {/* ✅ submit button */}
         <button type="submit" className="pay-btn">
           Pay Now
         </button>
       </form>
+
+      {/* ✅ Flower animation or image on success */}
+      {showFlower && (
+        <div className="flower-popup">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+            alt="Flower"
+            className="flower-img"
+          />
+          <h2>Order Placed Successfully! 🌸</h2>
+        </div>
+      )}
     </div>
   );
 };

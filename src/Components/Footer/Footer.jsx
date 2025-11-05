@@ -12,11 +12,11 @@ const Footer = () => {
     <p>SHOPPER</p>
 </div>
 <ul className='footer-links' >
-<li>Company</li>
-<li>Products</li>
-<li>Offices</li>
-<li>About</li>
-<li>Contact</li>
+<li style={{color:"red"}} >Company</li>
+<li style={{color:"red"}} >Products</li>
+<li style={{color:"red"}} >Offices</li>
+<li style={{color:"red"}} >About</li>
+<li style={{color:"red"}} >Contact</li>
 </ul>
 <div className="footer-social-icon">
     <di className="footer-icons-container">

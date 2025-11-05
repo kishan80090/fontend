@@ -9,6 +9,8 @@
   position: relative;
   z-index: 10;
   font-family: 'Poppins', sans-serif;
+  background-color: rgb(233, 231, 231);
+
 }
 
 /* Logo section */
@@ -41,9 +43,9 @@
 /* Dropdown / mobile menu visible */
 .nav-menu.nav-menu-visible {
   display: flex;
-  flex-direction: row;       /* row instead of column */
-  flex-wrap: wrap;           /* wrap if needed */
-  justify-content: center;   /* center horizontally */
+  flex-direction: row;   
+  flex-wrap: wrap;         
+  justify-content: center;   
   position: absolute;
   top: 70px;
   left: 0;
@@ -58,8 +60,8 @@
 .nav-menu li {
   position: relative;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px; 
+  font-weight: 600; 
   color: #333;
   transition: color 0.2s ease;
 }

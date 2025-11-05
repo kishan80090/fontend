@@ -1,0 +1,42 @@
+.latest-collection-page {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.latest-collection-page h1 {
+  color: #222;
+  font-size: 2.4rem;
+}
+
+.latest-collection-page hr {
+  width: 120px;
+  height: 4px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff4141;
+  margin: 10px auto 25px;
+}
+
+.latest-collection-page p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.latest-collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .latest-collection-page h1 {
+    font-size: 1.8rem;
+  }
+  .latest-collection-grid {
+    gap: 20px;
+  }
+}
