@@ -14,10 +14,12 @@ import AllProducts from "./Pages/AllProducts";
 import Checkout from "./Pages/Checkout"; 
 import Payment from "./Pages/Payment";
 import LatestCollection from './Pages/LatestCollection';
-import Company from "./Pages/Company";
-import Offices from "./Pages/Offices";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
+import Company from './Pages/Company';
+import Offices from './Pages/Offices';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+// import LoginSignup from './pages/LoginSignup';
+// import Login from './pages/Login';
 
 function App() {
   return (

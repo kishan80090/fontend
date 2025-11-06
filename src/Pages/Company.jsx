@@ -1,5 +1,5 @@
 import React from 'react';
-import './Company.css'; // CSS file create karenge
+import './Company.css';
 
 const Company = () => {
   return (
@@ -27,25 +27,17 @@ const Company = () => {
         <h2>Meet Our Team</h2>
         <div className="team-members">
           <div className="team-card">
-          <img src="/pic/prince.png" alt=".." />
-            <h3>Prince Kumar</h3>
-            <p>📞 +91 9559618602</p>
+        <h3><b style={{color:"black"}} >Kishan Kumar</b></h3>
           </div>
           <div className="team-card">
-            <img src="/pic/kishan.png" alt=".." />
-            <h3><b style={{color:"black"}} >Kishan Kumar</b></h3>
             <p><b style={{color:"black"}} >✉︎ kishank13857@gmail.com</b></p>
-            <p ><b style={{color:"black"}} >📞 +91 9559717200</b></p>
           </div>
           <div className="team-card">
-            <img src="/pic/amit.png" alt=".." />
-            <h3>Amit Singh</h3>
-            <p>📞 +91 8726633645</p>
+            <p ><b style={{color:"black"}} >📞 +91 9559717200</b></p>
           </div>
         </div>
       </section>
     </div>
   )
 }
-
 export default Company;
