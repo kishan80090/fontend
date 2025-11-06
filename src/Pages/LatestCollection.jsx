@@ -26,5 +26,4 @@ const LatestCollection = () => {
     </div>
   );
 };
-
 export default LatestCollection;

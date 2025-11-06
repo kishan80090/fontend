@@ -14,6 +14,11 @@ import AllProducts from "./Pages/AllProducts";
 import Checkout from "./Pages/Checkout"; 
 import Payment from "./Pages/Payment";
 import LatestCollection from './Pages/LatestCollection';
+import Company from "./Pages/Company";
+import Offices from "./Pages/Offices";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+
 function App() {
   return (
     <div>
@@ -34,6 +39,11 @@ function App() {
          <Route path="/checkout" element={<Checkout />} />
          <Route path="/payment" element={<Payment />} />
          <Route path="/latestcollection" element={<LatestCollection />} />
+         <Route path="/company" element={<Company />} />
+<Route path="/offices" element={<Offices />} />
+<Route path="/about" element={<About />} />
+<Route path="/contact" element={<Contact />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

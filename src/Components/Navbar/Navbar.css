@@ -3,14 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 10;
-  font-family: 'Poppins', sans-serif;
   background-color: rgb(233, 231, 231);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
+  /* Fixed navbar */
+  position: fixed; /* scroll par bhi upar rahega */
+  top: 0;          /* screen ke top par fix karega */
+  left: 0;
+  width: 100%;     /* poora width cover kare */
+  z-index: 1000;   /* upar ke elements se upar dikhaye */
+
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Logo section */
@@ -85,7 +88,7 @@
 .nav-login-cart {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   position: relative;
 }
 
@@ -148,4 +151,9 @@
   .nav-dropdown {
     display: block;
   }
+}
+
+/* Body padding to avoid content hidden behind navbar */
+body {
+  padding-top: 70px; /* navbar height ke hisaab se adjust karein */
 }
