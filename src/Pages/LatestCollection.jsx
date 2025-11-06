@@ -7,7 +7,7 @@ const LatestCollection = () => {
   return (
     <div className="latest-collection-page">
       <h1>✨ Latest Collection ✨</h1>
-      <hr />
+      <hr/>
       <p>Explore our trending new arrivals!</p>
       <p>Discover the latest trends across Men, Women, and Kids categories</p>
 
