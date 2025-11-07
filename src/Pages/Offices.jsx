@@ -49,7 +49,7 @@ const Offices = () => {
       {/* Contact Info */}
       <section className="office-contact">
         <h2>Contact Us</h2>
-        <p>Email: support@shopper.com</p>
+        <p>Email: kishank13857@gmail.com</p>
         <p>Phone: +91 9559717200</p>
       </section>
     </div>

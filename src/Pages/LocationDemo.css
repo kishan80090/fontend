@@ -1,0 +1,23 @@
+.location-page {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+.location-btn {
+  background-color:rgb(250, 38, 38);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.location-btn1 {
+  color: black;
+  cursor: pointer;
+  margin-top: 50px;
+}
+

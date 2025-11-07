@@ -18,8 +18,7 @@ import Company from './Pages/Company';
 import Offices from './Pages/Offices';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-// import LoginSignup from './pages/LoginSignup';
-// import Login from './pages/Login';
+import LocationDemo from './Pages/LocationDemo'; // ✅ नया import
 
 function App() {
   return (
@@ -38,14 +37,14 @@ function App() {
           <Route path='/login' element={<LoginSignup />} />
           <Route path='/imageproducts' element={<ImageProduct />} />
           <Route path='/all-products' element={<AllProducts />} />
-         <Route path="/checkout" element={<Checkout />} />
-         <Route path="/payment" element={<Payment />} />
-         <Route path="/latestcollection" element={<LatestCollection />} />
-         <Route path="/company" element={<Company />} />
-<Route path="/offices" element={<Offices />} />
-<Route path="/about" element={<About />} />
-<Route path="/contact" element={<Contact />} />
-
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/latestcollection" element={<LatestCollection />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/offices" element={<Offices />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/location" element={<LocationDemo />} /> {/* ✅ नया route */}
         </Routes>
         <Footer />
       </BrowserRouter>

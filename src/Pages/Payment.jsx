@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./Payment.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"; // ✅ Removed useNavigate
 
 const Payment = () => {
   const [method, setMethod] = useState("");
   const [showFlower, setShowFlower] = useState(false);
-  const navigate = useNavigate();
 
   const handlePayment = (e) => {
     e.preventDefault();
@@ -26,7 +25,7 @@ const Payment = () => {
           ? "UPI Payment Successful! 🎉"
           : "Cash on Delivery Selected! 🎉"
       );
-      navigate("/"); // redirect home after few seconds
+      // ✅ No redirect here
     }, 2500);
   };
 
@@ -86,11 +85,16 @@ const Payment = () => {
       {showFlower && (
         <div className="flower-popup">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+            src="https://kishan80090.github.io/jsondata/pictures/right.png"
             alt="Flower"
             className="flower-img"
           />
           <h2>Order Placed Successfully! 🌸</h2>
+
+          {/* ✅ Track Location Button */}
+          <Link to="/location">
+            <button className="track-location-btn"><b>Track Location</b></button>
+          </Link>
         </div>
       )}
     </div>

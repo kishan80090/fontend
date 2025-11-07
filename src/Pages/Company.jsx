@@ -25,15 +25,16 @@ const Company = () => {
       {/* Team Section */}
       <section className="company-team">
         <h2>Meet Our Team</h2>
+        <img src="https://kishan80090.github.io/jsondata/pictures/kishan.png" alt=".." />
         <div className="team-members">
           <div className="team-card">
         <h3><b style={{color:"black"}} >Kishan Kumar</b></h3>
           </div>
           <div className="team-card">
-            <p><b style={{color:"black"}} >✉︎ kishank13857@gmail.com</b></p>
+            <p><b style={{color:"black"}} >🖂 kishank13857@gmail.com</b></p>
           </div>
           <div className="team-card">
-            <p ><b style={{color:"black"}} >📞 +91 9559717200</b></p>
+            <p ><b style={{color:"black"}} >📞 𝑾𝒉𝒂𝒕𝒔𝑨pp +91 9559717200</b></p>
           </div>
         </div>
       </section>
