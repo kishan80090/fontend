@@ -8,7 +8,6 @@
   background-color: #fff;
 }
 
-/* Heading style */
 .new-Collections h1 {
   color: #171717;
   font-size: 32px;
@@ -28,11 +27,10 @@
   margin-bottom: 30px;
 }
 
-/* ✅ Grid layout for products */
 .collections {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* each card min 250px */
-  gap: 35px; /* proper space between cards */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 35px;
   width: 100%;
   max-width: 1200px;
   justify-items: center;
@@ -40,7 +38,7 @@
   box-sizing: border-box;
 }
 
-/* ✅ Product item box */
+
 .item {
   width: 100%;
   max-width: 250px;
@@ -56,8 +54,6 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* ✅ Product image */
 .item img {
   width: 100%;
   height: 250px;
@@ -71,7 +67,6 @@
   transform: scale(1.05);
 }
 
-/* ✅ Product name */
 .item p {
   font-size: 16px;
   font-weight: 500;
@@ -79,7 +74,6 @@
   margin: 10px 0 6px;
 }
 
-/* ✅ Price section */
 .item-prices {
   display: flex;
   justify-content: center;
@@ -99,7 +93,6 @@
   text-decoration: line-through;
 }
 
-/* ✅ Responsive */
 @media (max-width: 768px) {
   .new-Collections {
     padding: 30px 20px;
@@ -118,14 +111,11 @@
     height: 200px;
   }
 }
-/* ✅ Remove any global overflow issue */
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden; 
 }
-
-/* ✅ Container styling */
 .new-Collections {
   width: 100%;
   padding: 40px 60px;
@@ -134,10 +124,8 @@ body, html {
   align-items: center;
   box-sizing: border-box;
   background-color: #fff;
-  overflow-x: hidden; /* prevent side scroll */
+  overflow-x: hidden;
 }
-
-/* Heading */
 .new-Collections h1 {
   color: #171717;
   font-size: 32px;
@@ -157,7 +145,7 @@ body, html {
   margin-bottom: 30px;
 }
 
-/* ✅ Grid layout */
+
 .collections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -167,10 +155,8 @@ body, html {
   justify-items: center;
   box-sizing: border-box;
   padding: 10px;
-  overflow-x: hidden; /* extra protection */
+  overflow-x: hidden; 
 }
-
-/* ✅ Product item */
 .item {
   width: 100%;
   max-width: 250px;
@@ -187,7 +173,7 @@ body, html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ✅ Product image */
+
 .item img {
   width: 100%;
   height: 250px;
@@ -201,15 +187,13 @@ body, html {
   transform: scale(1.05);
 }
 
-/* ✅ Product name */
+
 .item p {
   font-size: 16px;
   font-weight: 500;
   color: #333;
   margin: 10px 0 6px;
 }
-
-/* ✅ Price */
 .item-prices {
   display: flex;
   justify-content: center;
@@ -229,7 +213,6 @@ body, html {
   text-decoration: line-through;
 }
 
-/* ✅ Responsive */
 @media (max-width: 768px) {
   .new-Collections {
     padding: 20px;

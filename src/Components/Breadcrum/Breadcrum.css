@@ -1,4 +1,3 @@
-/* Breadcrum.css */
 
 .breadcrum {
   display: flex;
@@ -16,14 +15,10 @@
   height: 12px;
   margin: 0 5px;
 }
-
-/* Highlight current product */
 .breadcrum span {
   font-weight: bold;
   color: #000;
 }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .breadcrum {
     font-size: 13px;

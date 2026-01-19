@@ -4,13 +4,11 @@
   margin: 80px auto;
   font-family: "Poppins", sans-serif;
   color: #333;
-  background-color: #fff8dc; /* Light yellow background like in your image */
+  background-color: #fff8dc; 
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* 🔹 Header Row (Titles) */
 .cartitems-format-main {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
@@ -24,8 +22,6 @@
 .cartitems-format-main p {
   margin: 0;
 }
-
-/* 🔹 Each Cart Item Row */
 .cartitems-format {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
@@ -42,8 +38,6 @@
   object-fit: cover;
   margin: auto;
 }
-
-/* 🔹 Quantity Button */
 .cartitems-quantity {
   border: none;
   background-color: #ffeded;
@@ -53,8 +47,6 @@
   font-weight: 600;
   cursor: default;
 }
-
-/* 🔹 Remove (Cancel) Button */
 .cartitems-remove {
   width: 25px;
   height: 25px;
@@ -67,8 +59,6 @@
   transform: scale(1.2);
   filter: brightness(0.8);
 }
-
-/* 🔹 Bottom Total Section */
 .cartitems-down {
   display: flex;
   flex-wrap: wrap;
@@ -115,8 +105,6 @@
 .cartitems-total button:hover {
   background-color: #e63c3c;
 }
-
-/* 🔹 Promo Code Section */
 .cartitems-promocode {
   flex: 1;
   min-width: 260px;
@@ -158,15 +146,11 @@
 .cartitems-promobox button:hover {
   background-color: #e63c3c;
 }
-
-/* 🔹 Divider Lines */
 hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 8px 0;
 }
-
-/* 📱 Responsive Design */
 @media (max-width: 768px) {
   .cartitems-format-main,
   .cartitems-format {

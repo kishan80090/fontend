@@ -18,7 +18,7 @@ import Company from './Pages/Company';
 import Offices from './Pages/Offices';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import LocationDemo from './Pages/LocationDemo'; // ✅ नया import
+import LocationDemo from './Pages/LocationDemo'; 
 
 function App() {
   return (
@@ -44,12 +44,11 @@ function App() {
           <Route path="/offices" element={<Offices />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/location" element={<LocationDemo />} /> {/* ✅ नया route */}
+          <Route path="/location" element={<LocationDemo />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
   );
 }
-
 export default App;

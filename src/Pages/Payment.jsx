@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Payment.css";
-import { Link } from "react-router-dom"; // ✅ Removed useNavigate
+import { Link } from "react-router-dom";
 
 const Payment = () => {
   const [method, setMethod] = useState("");
@@ -13,8 +13,6 @@ const Payment = () => {
       alert("Please select a payment method!");
       return;
     }
-
-    // ✅ Show flower animation on success
     setShowFlower(true);
 
     setTimeout(() => {
@@ -25,7 +23,6 @@ const Payment = () => {
           ? "UPI Payment Successful! 🎉"
           : "Cash on Delivery Selected! 🎉"
       );
-      // ✅ No redirect here
     }, 2500);
   };
 
@@ -81,7 +78,7 @@ const Payment = () => {
         </button>
       </form>
 
-      {/* ✅ Flower animation or image on success */}
+      
       {showFlower && (
         <div className="flower-popup">
           <img
@@ -91,7 +88,7 @@ const Payment = () => {
           />
           <h2>Order Placed Successfully! 🌸</h2>
 
-          {/* ✅ Track Location Button */}
+          
           <Link to="/location">
             <button className="track-location-btn"><b>Track Location</b></button>
           </Link>

@@ -22,7 +22,7 @@ const Company = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      
       <section className="company-team">
         <h2>Meet Our Team</h2>
         <img src="https://kishan80090.github.io/jsondata/pictures/kishan.png" alt=".." />

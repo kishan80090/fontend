@@ -1,4 +1,4 @@
-/* Navbar container */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -6,17 +6,15 @@
   background-color: rgb(233, 231, 231);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
-  /* Fixed navbar */
-  position: fixed; /* scroll par bhi upar rahega */
-  top: 0;          /* screen ke top par fix karega */
+  position: fixed; 
+  top: 0;         
   left: 0;
-  width: 100%;     /* poora width cover kare */
-  z-index: 1000;   /* upar ke elements se upar dikhaye */
+  width: 100%;     
+  z-index: 1000;   
 
   font-family: 'Poppins', sans-serif;
 }
 
-/* Logo section */
 .nav-logo {
   display: flex;
   align-items: center;
@@ -34,7 +32,6 @@
   color: #333;
 }
 
-/* Nav menu */
 .nav-menu {
   display: flex;
   list-style: none;
@@ -43,7 +40,6 @@
   transition: all 0.3s ease;
 }
 
-/* Dropdown / mobile menu visible */
 .nav-menu.nav-menu-visible {
   display: flex;
   flex-direction: row;   
@@ -59,7 +55,6 @@
   gap: 20px;
 }
 
-/* Nav items */
 .nav-menu li {
   position: relative;
   cursor: pointer;
@@ -72,8 +67,6 @@
 .nav-menu li:hover {
   color: #ff4c3b;
 }
-
-/* Underline for active menu */
 .nav-menu li hr {
   position: absolute;
   bottom: -5px;
@@ -83,8 +76,6 @@
   background-color: #ff4c3b;
   border: none;
 }
-
-/* Nav login and cart section */
 .nav-login-cart {
   display: flex;
   align-items: center;
@@ -106,8 +97,6 @@
 .nav-login-cart button:hover {
   background-color: #e04336;
 }
-
-/* Cart icon and count */
 .nav-login-cart img {
   width: 25px;
   height: 25px;
@@ -128,8 +117,6 @@
   align-items: center;
   justify-content: center;
 }
-
-/* Dropdown icon */
 .nav-dropdown {
   display: none;
   width: 25px;
@@ -141,8 +128,6 @@
 .nav-dropdown.open {
   transform: rotate(360deg);
 }
-
-/* Responsive */
 @media screen and (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -153,7 +138,6 @@
   }
 }
 
-/* Body padding to avoid content hidden behind navbar */
 body {
-  padding-top: 70px; /* navbar height ke hisaab se adjust karein */
+  padding-top: 70px; 
 }

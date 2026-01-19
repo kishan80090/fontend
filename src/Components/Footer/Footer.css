@@ -74,7 +74,6 @@
 }
 
 .footer-icons-container:hover {
-  /* background: green; */
   background: linear-gradient(to right, rgb(92, 92, 238),red);
   transform: scale(1.1);
 }
@@ -88,12 +87,9 @@
 .footer p {
   font-size: 14px;
   text-align: center;
-  /* color: black; */
   color: blue;
 
 }
-
-/* ✅ Responsive */
 @media (max-width: 768px) {
   .footer {
     padding: 30px 20px;

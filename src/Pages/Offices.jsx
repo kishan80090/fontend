@@ -4,13 +4,10 @@ import './Offices.css';
 const Offices = () => {
   return (
     <div className="offices-page">
-      {/* Hero Section */}
       <section className="offices-hero">
         <h1>Our Offices</h1>
         <p>We have multiple locations to serve you better. Visit us at any of our stores!</p>
       </section>
-
-      {/* Office Locations */}
       <section className="office-locations">
         <div className="office-card">
           <h2>New Delhi</h2>

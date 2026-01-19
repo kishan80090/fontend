@@ -25,7 +25,7 @@
 
 .relatedproducts-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   justify-content: center;
   align-items: stretch;
