@@ -42,8 +42,6 @@ const Offices = () => {
           <p>505 Corporate Plaza, Sector 27, Gurugram, India</p>
         </div>
       </section>
-
-      {/* Contact Info */}
       <section className="office-contact">
         <h2>Contact Us</h2>
         <p>Email: kishank13857@gmail.com</p>

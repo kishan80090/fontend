@@ -2,25 +2,39 @@ import React, { useContext, useState } from "react";
 import "./ImageProduct.css";
 import imageProducts from "../Components/Assets/imageproduct";
 import { ShopContext } from "../Context/ShopContext";
+import imageBannerVideo from "../Components/Assets/latest.mp4";
 
 const ImageProduct = () => {
   const { addToCart } = useContext(ShopContext);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [selectedSize, setSelectedSize] = useState(null); 
+  const [selectedSize, setSelectedSize] = useState(null);
+
   const handleAddToCart = (product) => {
     addToCart(product.id);
-
     const sizeInfo = selectedSize ? `(Size: ${selectedSize})` : "(No size selected)";
     alert(`${product.name} ${sizeInfo} added to cart successfully!`);
-
     setSelectedProduct(null);
     setSelectedSize(null);
   };
 
   return (
     <div className="image-products">
-      <h1>🎉 Explore Our Exclusive Collection 🎉</h1>
-      <p>Discover the latest trends across Men, Women, and Kids categories</p>
+
+      <div className="banner-wrapper">
+        <video
+          className="image-banner-video"
+          src={imageBannerVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <div className="banner-overlay">
+          <h1 style={{color:"red"}} >🎉 Explore Our Exclusive Collection 🎉</h1>
+          <p style={{color:"white"}} >Discover the latest trends across Men, Women, and Kids</p>
+        </div>
+      </div>
+
       <div className="product-grid">
         {imageProducts.map((product) => (
           <div key={product.id} className="product-card">
@@ -41,6 +55,7 @@ const ImageProduct = () => {
           </div>
         ))}
       </div>
+
       {selectedProduct && (
         <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -59,15 +74,14 @@ const ImageProduct = () => {
               <span className="new-price">₹{selectedProduct.new_price}</span>
               <span className="old-price">₹{selectedProduct.old_price}</span>
             </div>
+
             <div className="size-options">
               <p>Available Sizes:</p>
               <div className="size-buttons">
                 {["S", "M", "L", "XL", "XLL"].map((size) => (
                   <button
                     key={size}
-                    className={`size-btn ${
-                      selectedSize === size ? "selected" : ""
-                    }`}
+                    className={`size-btn ${selectedSize === size ? "selected" : ""}`}
                     onClick={() => setSelectedSize(size)}
                   >
                     {size}
@@ -75,6 +89,7 @@ const ImageProduct = () => {
                 ))}
               </div>
             </div>
+
             <div className="modal-buttons">
               <button onClick={() => handleAddToCart(selectedProduct)}>
                 Add to Cart
@@ -92,7 +107,9 @@ const ImageProduct = () => {
           </div>
         </div>
       )}
+
     </div>
   );
 };
+
 export default ImageProduct;

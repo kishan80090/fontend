@@ -11,7 +11,16 @@ const ShopCategory = (props) => {
 
   return (
     <div className='shop-category'>
-      <img className='shopcategory-banner' src={props.banner} alt="" />
+<div className="banner-wrapper">
+  <video
+    className="shopcategory-banner"
+    src={props.banner}
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
 
       <div className="shopcategory-index-indexSort">
         <p>
