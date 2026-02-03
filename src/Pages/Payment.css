@@ -22,7 +22,7 @@
   margin-bottom: 20px;
 }
 
-/* 🌿 Payment Options */
+
 .payment-options {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-/* 💳 Card Details Section */
+
 .card-details {
   width: 100%;
   display: flex;
@@ -72,7 +72,7 @@
   gap: 10px;
 }
 
-/* 💵 Pay Now Button */
+
 .pay-btn {
   width: 100%;
   margin-top: 25px;
@@ -92,7 +92,7 @@
   transform: translateY(-2px);
 }
 
-/* 🌸 Flower Popup Animation */
+
 .flower-popup {
   position: fixed;
   top: 0;
@@ -121,7 +121,7 @@
   font-weight: 600;
 }
 
-/* 🌸 Animations */
+
 @keyframes bloom {
   0% {
     transform: scale(0.9);
@@ -140,7 +140,7 @@
   }
 }
 
-/* 📱 Responsive Design */
+
 @media (max-width: 500px) {
   .payment-page {
     margin: 40px 15px;
