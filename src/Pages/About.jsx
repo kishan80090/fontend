@@ -4,13 +4,13 @@ import './About.css';
 const About = () => {
   return (
     <div className="about-page">
-      {/* Hero Section */}
+      
       <section className="about-hero">
         <h1>About Shopper</h1>
         <p>We are passionate about bringing the best fashion experience to our customers. Discover our story, mission, and vision.</p>
       </section>
 
-      {/* Mission & Vision */}
+      
       <section className="about-mission">
         <div className="mission-card">
           <h2>Our Mission</h2>
@@ -22,7 +22,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Brand Story */}
+      
       <section className="brand-story">
         <h2>Our Story</h2>
         <p>Started in 2025, Shopper has been committed to delivering the latest trends in Men, Women, and Kids fashion. We believe shopping should be easy, fun, and stylish.</p>

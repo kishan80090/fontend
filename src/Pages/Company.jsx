@@ -10,7 +10,7 @@ const Company = () => {
         <p>We are committed to delivering the best shopping experience for our customers.</p>
       </section>
 
-      {/* Mission & Vision Section */}
+      
       <section className="company-mission">
         <div className="mission-card">
           <h2>Our Mission</h2>

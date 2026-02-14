@@ -1,4 +1,4 @@
-/* General Page Styling */
+
 .company-page {
   font-family: "Poppins", sans-serif;
   color: #333;
@@ -7,7 +7,6 @@
   padding-bottom: 50px;
 }
 
-/* Hero Section */
 .company-hero {
   background: linear-gradient(135deg, #0077ff, #00bfff);
   color: white;
@@ -25,7 +24,7 @@
   margin: 0 auto;
 }
 
-/* Mission & Vision Section */
+
 .company-mission {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +52,7 @@
   margin-bottom: 10px;
 }
 
-/* Team Section */
+
 .company-team {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -66,7 +65,6 @@
   margin-bottom: 20px;
 }
 
-/* Image Styling */
 .company-team img {
   width: 180px;
   height: 180px;
@@ -78,7 +76,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Team Info */
 .team-members {
   display: flex;
   flex-direction: column;
@@ -101,7 +98,6 @@
   color: #333;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .company-hero h1 {
     font-size: 2rem;
@@ -121,3 +117,45 @@
     height: 140px;
   }
 }
+.team-card{
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.team-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 300% 300%;
+  animation: borderWalk 3s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+@keyframes borderWalk{
+  0%{
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 300% 50%;
+  }
+}
+

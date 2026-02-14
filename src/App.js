@@ -12,21 +12,23 @@ import kid_banner from './Components/Assets/kids.mp4';
 import ImageProduct from "./Pages/ImageProduct"; 
 import AllProducts from "./Pages/AllProducts"; 
 import Checkout from "./Pages/Checkout"; 
-import Payment from "./Pages/Payment";
+import Payment from "./Pages/Payment"; 
 import LatestCollection from './Pages/LatestCollection';
 import Company from './Pages/Company';
 import Offices from './Pages/Offices';
 import About from './Pages/About';
 import men_banner from './Components/Assets/banner.mp4';
 import Contact from './Pages/Contact';
-import LocationDemo from './Pages/LocationDemo'; 
-
+import LocationDemo from './Pages/LocationDemo';
+import ScrollToTop from "./ScrollToTop"; 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
         <Navbar />
         <Routes>
+          
           <Route path='/' element={<Shop />} />
           <Route path='/mens' element={<ShopCategory banner={men_banner} category="men" />} />
           <Route path='/womens' element={<ShopCategory banner={women_banner} category="women" />} />

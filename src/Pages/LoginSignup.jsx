@@ -11,10 +11,8 @@ const LoginSignup = () => {
 
   const handleSubmit = async () => {
     if (isLogin) {
-      // ✅ Demo login alert only (no backend)
       alert(`Welcome back, ${formData.email}!`);
     } else {
-      // ✅ Signup request
       const res = await fetch("http://localhost:5000/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -36,7 +34,7 @@ const LoginSignup = () => {
               type="text"
               placeholder="Your Name"
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })} 
             />
           )}
           <input

@@ -135,3 +135,38 @@
     max-width: 280px;
   }
 }
+.exclusive-video{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;  
+  border-radius: 20px;    
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+  display: block;
+}
+.offers-right{
+  position: relative;
+}
+
+.h1{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: blink 1.2s infinite;
+}
+
+.h1 h1{
+  color: rgb(94, 94, 230);
+  font-weight: bold;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}

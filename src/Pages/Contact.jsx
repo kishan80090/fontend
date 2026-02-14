@@ -20,13 +20,11 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Hero Section */}
       <section className="contact-hero">
         <h1>Contact Us</h1>
         <p>We’d love to hear from you! Reach out for any queries or feedback.</p>
       </section>
 
-      {/* Contact Form */}
       <section className="contact-form-section">
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
@@ -55,8 +53,6 @@ const Contact = () => {
           <button type="submit">Send Message</button>
         </form>
       </section>
-
-      {/* Contact Info */}
       <section className="contact-info">
         <h2>Our Info</h2>
         <p>Email: support@shopper.com</p>

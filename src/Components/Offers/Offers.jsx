@@ -1,8 +1,8 @@
 import React from 'react';
 import './Offers.css';
-import exclusive_image from '../Assets/exclusive_image.png';
+// import exclusive_image from '../Assets/exclusive_image.png';
 import { useNavigate } from 'react-router-dom';
-
+import exclusive_video from '../Assets/exclusive_video.mp4';
 const Offers = () => {
   const navigate = useNavigate();
 
@@ -19,7 +19,14 @@ const Offers = () => {
         <button onClick={handleCheckNow}>Check Now</button>
       </div>
       <div className="offers-right">
-        <img src={exclusive_image} alt="Exclusive Offer" />
+        {/* <img src={exclusive_image} alt="Exclusive Offer" /> */}
+
+        <video src={exclusive_video} autoPlay muted loop playsInline className="exclusive-video">
+          
+        </video>
+        <div className='h1' >
+        <h1>OFFERS FOR YOU ⭐⭐⭐</h1>
+        </div>
       </div>
     </div>
   );
