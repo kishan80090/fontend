@@ -29,7 +29,7 @@
 .nav-logo p {
   font-size: 22px;
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
 }
 
 .nav-menu {
@@ -252,4 +252,3 @@ body {
     background-position: 300% 50%;
   }
 }
-

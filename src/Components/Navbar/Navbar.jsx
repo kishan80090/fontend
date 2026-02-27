@@ -23,7 +23,7 @@ const navigate = useNavigate()
 const [search, setSearch] = useState("")
 const [results, setResults] = useState([])
 const handleSearch = (e) => {
-  const value = e.target.value
+  const value = e.target.value.toLowerCase()
   setSearch(value)
 
   if (value.trim() === "") {
@@ -31,14 +31,16 @@ const handleSearch = (e) => {
     return
   }
 
-  const filtered = all_product.filter(item =>
-    item.name.toLowerCase().includes(value.toLowerCase())
-  )
+  const filtered = all_product.filter(item => {
+    if (value === "men" || value === "women" || value === "kid") {
+      return item.category.toLowerCase() === value
+    }
+    return item.name.toLowerCase().includes(value)
+  })
 
   setResults(filtered.slice(0, 5))
 }
 
-    
   return (
     <div className='navbar' >
         <div className="nav-logo">
@@ -63,14 +65,13 @@ const handleSearch = (e) => {
     onChange={handleSearch}
   />
 </div>
-
 {results.length > 0 && (
   <div className="search-results">
     {results.map(item => (
       <div
         key={item.id}
         className="search-item"
-        onClick={() => {navigate(`/product/${item.id}`)
+        onClick={(e) => {navigate(`/product/${item.id}`)
           setSearch("")
           setResults([])
         }}
@@ -81,7 +82,6 @@ const handleSearch = (e) => {
     ))}
   </div>
 )}
-
 </ul>
 <div className="nav-login-cart">
     <Link to='/login' ><button>Login</button></Link>
