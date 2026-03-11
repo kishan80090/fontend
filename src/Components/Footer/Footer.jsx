@@ -36,10 +36,8 @@ const Footer = () => {
 
       <div className="footer-copyright">
           <hr/>
-          <p>Copyright @ 2025 - All Right Reserved</p>
-          <p>Name : Kishan Kumar Kannaujiya</p>
-          <p>Email : kishank13857@gmail.com</p>
-          <p>Mobile : +91 9559717200</p>
+        <p>Help Center: support@fashionhub.com</p>
+        <p>Call Us: +91 9559717200</p>
       </div>
     </div>
   )

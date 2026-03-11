@@ -5,10 +5,8 @@ import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
 import nav_dropdown from '../Assets/nav_dropdown.png'
-
 import all_product from '../Assets/all_product'
 import { useNavigate } from 'react-router-dom'
-
 
 const Navbar = () => {
     const [menu,setMenu]= useState("shop");
@@ -30,9 +28,8 @@ const handleSearch = (e) => {
     setResults([])
     return
   }
-
   const filtered = all_product.filter(item => {
-    if (value === "men" || value === "women" || value === "kid") {
+    if (value === "men" || value === "women" || value === "kid" ) {
       return item.category.toLowerCase() === value
     }
     return item.name.toLowerCase().includes(value)
@@ -65,21 +62,26 @@ const handleSearch = (e) => {
     onChange={handleSearch}
   />
 </div>
-{results.length > 0 && (
+{search && (
   <div className="search-results">
-    {results.map(item => (
-      <div
-        key={item.id}
-        className="search-item"
-        onClick={(e) => {navigate(`/product/${item.id}`)
-          setSearch("")
-          setResults([])
-        }}
-      >
-        <img src={item.image} alt="" />
-        <span>{item.name}</span>
-      </div>
-    ))}
+    {results.length === 0 ? (
+      <p style={{color:"red"}} >No results found</p>
+    ) : (
+      results.map(item => (
+        <div
+          key={item.id}
+          className="search-item"
+          onClick={() => {
+            navigate(`/product/${item.id}`);
+            setSearch("");
+            setResults([]);
+          }}
+        >
+          <img src={item.image} alt="" />
+          <span>{item.name}</span>
+        </div>
+      ))
+    )}
   </div>
 )}
 </ul>
