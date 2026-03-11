@@ -65,7 +65,7 @@ const handleSearch = (e) => {
 {search && (
   <div className="search-results">
     {results.length === 0 ? (
-      <p style={{color:"red"}} >No results found</p>
+    <center><p style={{color:"red"}} >No results found</p></center>
     ) : (
       results.map(item => (
         <div
