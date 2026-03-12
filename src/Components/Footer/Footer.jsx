@@ -5,7 +5,7 @@ import footer_logo from '../Assets/footer_logo.png'
 import instagram_icon from '../Assets/instagram_icon.png'
 import pintester_icon from '../Assets/pintester_icon.png'
 import whatsapp_icon from '../Assets/whatsapp_icon.png'
-
+import facebook_icon from '../Assets/facebook_icon.jpg'
 const Footer = () => {
   return (
     <div className='footer' >
@@ -13,7 +13,6 @@ const Footer = () => {
           <img src={footer_logo} alt="" />
           <p>SHOPPER</p>
       </div>
-
       <ul className='footer-links' >
         <li><Link to="/company" style={{color:"red"}}>Company</Link></li>
         <li><Link to="/all-products" style={{color:"red"}}>Products</Link></li>
@@ -27,13 +26,17 @@ const Footer = () => {
               <img src={instagram_icon} alt="" />
           </div>
           <div className="footer-icons-container">
+  <img src={facebook_icon} alt="Facebook" />
+</div>
+          <div className="footer-icons-container">
               <img src={pintester_icon} alt="" />
           </div>
-          <div className="footer-icons-container">
-              <img src={whatsapp_icon} alt="" />
-          </div>
+         <div className="footer-icons-container">
+    <a href="https://wa.me/919559717200?text=Hello%20I%20want%20to%20know%20about%20your%20products">
+    <img src={whatsapp_icon} alt="WhatsApp" />
+  </a>
+</div>
       </div>
-
       <div className="footer-copyright">
           <hr/>
         <p>Help Center: support@fashionhub.com</p>
@@ -42,5 +45,4 @@ const Footer = () => {
     </div>
   )
 }
-
 export default Footer;
