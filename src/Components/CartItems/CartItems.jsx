@@ -8,10 +8,7 @@ const CartItems = () => {
   const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
   const navigate = useNavigate();
 
-  
   const isCartEmpty = getTotalCartAmount() === 0;
-
-  
   const handleCheckout = () => {
     if (isCartEmpty) {
       alert("Please add some products to your cart before checkout!");
@@ -19,7 +16,6 @@ const CartItems = () => {
       navigate("/checkout");
     }
   };
-
   return (
     <div className='cartitems'>
       <div className="cartitems-format-main">
@@ -99,5 +95,4 @@ const CartItems = () => {
     </div>
   )
 }
-
 export default CartItems;

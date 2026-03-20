@@ -5,13 +5,13 @@
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  padding: 50px;
+  padding: 30px;
   box-sizing: border-box;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .loginsignup-container {
-  background-color: rgb(187, 186, 186);
+  background-color: rgb(139, 115, 131);
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
