@@ -27,7 +27,6 @@ const CartItems = () => {
         <p>Remove</p>
       </div>
       <hr />
-
       {all_product.map((item) => {
         if (cartItems[item.id] > 0) {
           return (
