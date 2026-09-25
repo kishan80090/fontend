@@ -69,11 +69,7 @@ const handleSearch = (e) => {
     ) : (
       results.map(item => (
         <div
-          key={item.id}
-          className="search-item"
-          onClick={() => {
-            navigate(`/product/${item.id}`);
-            setSearch("");
+          key={item.id} className="search-item" onClick={() => { navigate(`/product/${item.id}`); setSearch("");
             setResults([]);
           }}
         >
